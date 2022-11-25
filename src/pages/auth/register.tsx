@@ -17,39 +17,39 @@ const Register = () => {
   }
 
   return (
-    <>
-      <form>
-        <h1>Register</h1>
+    <div className='register'>
+    <form className='register-form'>
+      <h1 className='register-form-title'>Register</h1>
 
-        <label>
-          Full Name
-          <input type='text' />          
-        </label>
+      <label className='register-form-label'>
+        <span className='register-form-label-title'>Full Name</span> 
+        <input type='text' />          
+      </label>
 
-        <label>
-          Email
-          <input type='email' />          
-        </label>
+      <label className='register-form-label'>
+        <span className='register-form-label-title'>Email</span>
+        <input type='email' />          
+      </label>
 
-        <label>
-          Password
-          <input type='password' />
-        </label>
+      <label className='register-form-label'>
+        <span className='register-form-label-title'>Password</span>
+        <input type='password' />
+      </label>
 
-        <label>
-          Confirm Password
-          <input type='password' />
-        </label>
+      <label className='register-form-label'>
+        <span className='register-form-label-title'>Confirm Password</span> 
+        <input type='password' />
+      </label>
 
-        <button type='submit'>Sign up</button>
+      <button className='register-submit btn-submit' type='submit'>Sign up</button>
 
-        <p>
-          Have an account ?
-          <Link href='/auth/register'>Click here</Link>
-        </p>
+      <p>
+        Have an account ?
+        <Link href='/auth/login'><span className='link-to-login'>Click here</span></Link>
+      </p>
 
-      </form>
-    </>
+    </form>
+  </div>
   )
 }
 

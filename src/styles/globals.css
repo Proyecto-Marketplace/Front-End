@@ -1,3 +1,12 @@
+@import url('./auth/login.css');
+@import url('./auth/register.css');
+
+:root{
+  --tablet-width: 1000px;
+  --border-color: white;
+}
+
+
 html,
 body {
   padding: 0;
@@ -13,6 +22,17 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+/* ------- class ----------*/
+.btn-submit{
+  background-color: #cecece;
+  color: black;
+  border: none;
+}
+
+.btn-submit:hover{
+  background-color: white;
 }
 
 @media (prefers-color-scheme: dark) {

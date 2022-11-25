@@ -16,29 +16,29 @@ const Login = () => {
   }
 
   return (
-    <>
-      <form>
-        <h1>Login</h1>
+    <div className='login'>
+      <form className='login-form'>
+        <h1 className='login-form-title'>Login</h1>
 
-        <label>
-          Email
+        <label className='login-form-label'>
+        <span className='login-form-label-title'>Email</span>         
           <input type='email' />          
         </label>
 
-        <label>
-          Password
+        <label className='login-form-label'>
+          <span className='login-form-label-title'>Password</span> 
           <input type='password' />
         </label>
 
-        <button type='submit'>Sign in</button>
+        <button className='login-submit btn-submit' type='submit'>Sign in</button>
 
         <p>
           Do not have an account ?
-          <Link href='/auth/register'>Click here</Link>
+          <Link href='/auth/register'><span className='link-to-register'> spanClick here</span></Link>
         </p>
 
       </form>
-    </>
+    </div>
   )
 }
 
