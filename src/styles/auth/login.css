@@ -1,0 +1,52 @@
+.login{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form{
+    min-width: 332px;
+    display: flex;
+    flex-direction: column;
+    border: 1px var(--border-color) solid;
+    border-radius: 0.2rem;
+    padding: 20px;
+}
+
+.login-form-title{
+    text-align: center;
+}
+
+.login-form-label{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-submit{
+    margin: 15px 0;
+
+}
+
+.link-to-register{
+    font-weight: 900;
+}
+
+/* @media not support var(--bable-width) */
+@media (min-width: 900px) {
+
+    .login-form{
+        min-width: 386px;
+    }
+    
+    .login-form-label{
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 5px 0;
+    }
+
+    .login-form-label-title{
+        margin-right: 10px;
+    }
+}
