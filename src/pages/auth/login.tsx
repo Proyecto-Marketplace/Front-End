@@ -1,9 +1,19 @@
 import Link from 'next/link';
+import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm, SubmitHandler } from 'react-hook-form';
+import { loginSchema, LoginSchema as FormValues } from '../../common/auth';
 
 const Login = () => {
 
-  const { register, formState: { errors }, handleSubmit } = useForm();
+  const { register, formState: { errors }, handleSubmit } = useForm<FormValues>({
+    mode: 'all',
+    resolver: zodResolver(loginSchema),
+    shouldFocusError: true
+  });
+
+  const handleLogin: SubmitHandler<FormValues> = (data) => {
+    console.log({ data });
+  }
 
   return (
     <>
