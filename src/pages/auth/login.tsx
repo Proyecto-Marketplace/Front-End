@@ -1,4 +1,5 @@
 import Link from 'next/link';
+
 import { useForm, SubmitHandler } from 'react-hook-form';
 
 const Login = () => {
