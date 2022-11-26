@@ -18,38 +18,38 @@ const Register = () => {
 
   return (
     <div className='register'>
-    <form className='register-form'>
-      <h1 className='register-form-title'>Register</h1>
+      <form className='register-form' onSubmit={handleSubmit(handleLogin)}>
+        <h1 className='register-form-title'>Register</h1>
 
-      <label className='register-form-label'>
-        <span className='register-form-label-title'>Full Name</span> 
-        <input type='text' />          
-      </label>
+        <label className='register-form-label'>
+          <span className='register-form-label-title'>Full Name</span>
+          <input type='text' {...register('name')} />
+        </label>
 
-      <label className='register-form-label'>
-        <span className='register-form-label-title'>Email</span>
-        <input type='email' />          
-      </label>
+        <label className='register-form-label'>
+          <span className='register-form-label-title'>Email</span>
+          <input type='email' {...register('email')} />
+        </label>
 
-      <label className='register-form-label'>
-        <span className='register-form-label-title'>Password</span>
-        <input type='password' />
-      </label>
+        <label className='register-form-label'>
+          <span className='register-form-label-title'>Password</span>
+          <input type='password' {...register('password')} />
+        </label>
 
-      <label className='register-form-label'>
-        <span className='register-form-label-title'>Confirm Password</span> 
-        <input type='password' />
-      </label>
+        <label className='register-form-label'>
+          <span className='register-form-label-title'>Confirm Password</span>
+          <input type='password' {...register('confirm_password')} />
+        </label>
 
-      <button className='register-submit btn-submit' type='submit'>Sign up</button>
+        <button className='register-submit btn-submit' type='submit'>Sign up</button>
 
-      <p>
-        Have an account ?
-        <Link href='/auth/login'><span className='link-to-login'>Click here</span></Link>
-      </p>
+        <p>
+          Have an account ?
+          <Link href='/auth/login'><span className='link-to-login'>Click here</span></Link>
+        </p>
 
-    </form>
-  </div>
+      </form>
+    </div>
   )
 }
 
