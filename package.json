@@ -27,6 +27,7 @@
     "bcrypt": "^5.1.0",
     "eslint": "8.28.0",
     "eslint-config-next": "13.0.4",
+    "js-cookie": "^3.0.1",
     "next": "13.0.4",
     "next-auth": "^4.17.0",
     "react": "18.2.0",
@@ -37,6 +38,7 @@
     "zod": "^3.19.1"
   },
   "devDependencies": {
+    "@types/js-cookie": "^3.0.2",
     "prisma": "^4.6.1",
     "tsx": "^3.12.1"
   }
