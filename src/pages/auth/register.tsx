@@ -55,7 +55,7 @@ const Register = () => {
           <span className='register-form-label-title'>Email</span>
           <input type='email' {...register('email')} />
           <span>
-            {errors.name?.type !== 'used' && errors.name?.message}
+            {errors.name?.message}
           </span>
         </label>
 
@@ -63,7 +63,7 @@ const Register = () => {
           <span className='register-form-label-title'>Password</span>
           <input type='password' {...register('password')} />
           <span>
-            {errors.password?.type !== 'used' && errors.password?.message}
+            {errors.password?.message}
           </span>
         </label>
 
@@ -71,7 +71,7 @@ const Register = () => {
           <span className='register-form-label-title'>Confirm Password</span>
           <input type='password' {...register('confirm_password')} />
           <span>
-            {errors.confirm_password?.type !== 'used' && errors.confirm_password?.message}
+            {errors.confirm_password?.message}
           </span>
         </label>
 
